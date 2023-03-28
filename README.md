@@ -34,7 +34,7 @@ SRT to SRT (SRT^2) 是一个简单的翻译器，原理：
 > npm run dev
 ```
 
-开发过程中需要确保本机启动了翻译服务器。可以使用CPU的，也可以使用支持GPU的。
+开发过程中需要确保本机启动了翻译服务器。可以使用 CPU 的，也可以使用支持 GPU 的。
 
 ### CPU
 
@@ -53,8 +53,23 @@ SRT to SRT (SRT^2) 是一个简单的翻译器，原理：
 
 ### GPU
 
+#### 环境
+
+-  使用 GPU 需要安装 cuda 环境，注意版本：11.7：https://developer.nvidia.com/cuda-11-7-0-download-archive?target_os=Windows&target_arch=x86_64
+
+验证 cuda 安装成功：命令行输入 `nvcc -V`，看输出：
+
+```bash
+  Copyright (c) 2005-2022 NVIDIA Corporation
+  Built on Tue_May__3_19:00:59_Pacific_Daylight_Time_2022
+  Cuda compilation tools, release 11.7, V11.7.64
+  Build cuda_11.7.r11.7/compiler.31294372_0
+```
+
+#### 安装
+
 -   GPU 翻译服务器：https://github.com/rerender2021/NLP-GPU-API/releases/tag/1.0.0
-  
+   
 下载后，解压到项目下，确保项目目录结构如下：
 
 ```
